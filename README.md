@@ -44,9 +44,7 @@ biotech-catalyst-strategy/
 │
 ├── .gitignore
 ├── README.md
-
-
----
+```
 
 ##  👩‍💻 Data Pipeline
 
@@ -57,8 +55,6 @@ biotech-catalyst-strategy/
 5. Download historical stock price data  
 6. Generate trades based on entry/exit rules  
 
----
-
 ## 📊 Backtest Results
 
 - Total Trades: 150+
@@ -67,8 +63,6 @@ biotech-catalyst-strategy/
 - Sharpe Ratio: ~ 0.8
 - Max Drawdown: high (high tail risk)
 
----
-
 ## 👀 Key Insights
 
 - Evidence of pre-catalyst momentum in biotech equities
@@ -76,23 +70,17 @@ biotech-catalyst-strategy/
 - Strategy exhibits significant downside tail risk
 - Indicates need for stronger risk management
 
----
-
 ## 🛑 Limitations
 
 - Uses primary completion dates as proxies
 - No transaction costs included
 - Limited stock universe
 
----
-
 ## 🔨 Future Improvements
 
 - Add position sizing & risk management
 - Expand ticker universe
 - Explore more robust pipeline scoring methods
-
----
 
 ## 🙋‍♀️ Author
 
