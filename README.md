@@ -28,6 +28,7 @@ Biotech stocks typically experience speculative price increases before the resul
 
 ## 🏛️ Project Structure
 
+```bash
 biotech-catalyst-strategy/
 │
 ├── src/
