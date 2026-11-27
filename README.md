@@ -1,8 +1,8 @@
-# 🧬 Biotech Catalyst Trading Strategy
+# Biotech Catalyst Trading Strategy
 
 End-to-end Python pipeline for an event-driven trading strategy using ClinicalTrials.gov and market data APIs to capture pre-catalyst momentum in small-cap biotech stocks
 
-## 📈 Overview
+## Overview
 
 This project builds a trading strategy that:
 1. identifies upcoming biotech catalyst events (clinical trial readouts)
@@ -12,21 +12,21 @@ This project builds a trading strategy that:
 This project explores the following idea:
 Biotech stocks typically experience speculative price increases before the results of major clinical trials. Capturing this momentum is useful because it avoids the binary outcome of the clinical trials.
 
-## 🤝 Strategy Logic
+## Strategy Logic
 
 - **Clinical Trial Catalysts** are identified using primary completion dates from ClinicalTrials.gov
 - Companies are scored using a **phase-weighted pipeline strength model**
 - Positions are entered **28 days before catalyst events** and exited **1 day before the event** (in order to avoid the effect of the binary outcome)
 - Filters are applied based on pipeline strength
 
-## 💻 Tech Stack
+## Tech Stack
 - **Python**
 - **Pandas / NumPy**
 - **yfinance API** - historical price data
 - **ClinicalTrials.gov API (pytrials)** - clinical trial data
 - **Pathlib**
 
-## 🏛️ Project Structure
+## Project Structure
 
 ```bash
 biotech-catalyst-strategy/
@@ -46,7 +46,7 @@ biotech-catalyst-strategy/
 ├── README.md
 ```
 
-##  👩‍💻 Data Pipeline
+##  Data Pipeline
 
 1. Extracts clinical trial data from ClinicalTrials.gov  
 2. Clean and structure trial phases, statuses, and dates  
@@ -55,7 +55,7 @@ biotech-catalyst-strategy/
 5. Download historical stock price data  
 6. Generate trades based on entry/exit rules  
 
-## 📊 Backtest Results
+## Backtest Results
 
 - Total Trades: 150+
 - Win Rate: ~ 46%
@@ -63,25 +63,23 @@ biotech-catalyst-strategy/
 - Sharpe Ratio: ~ 0.8
 - Max Drawdown: high (high tail risk)
 
-## 👀 Key Insights
+## Key Insights
 
 - Evidence of pre-catalyst momentum in biotech equities
 - Positive average returns, but caused by a small number of large winners
 - Strategy exhibits significant downside tail risk
 - Indicates need for stronger risk management
 
-## 🛑 Limitations
+## Limitations
 
 - Uses primary completion dates as proxies
 - No transaction costs included
 - Limited stock universe
 
-## 🔨 Future Improvements
+## Future Improvements
 
 - Add position sizing & risk management
 - Expand ticker universe
 - Explore more robust pipeline scoring methods
-
-## 🙋‍♀️ Author
 
 Created by Aishi Dev
